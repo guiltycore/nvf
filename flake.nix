@@ -8,7 +8,6 @@
 
     neowiki = {
       url = "github:echaya/neowiki.nvim";
-      inputs.nixpkgs.follows = "nixpkgs";
       flake = false;
     };
   };
