@@ -1,7 +1,7 @@
 { pkgs, ... }:
 {
   vim = {
-    extraPackages = [
+    extraPlugins = {
       tabby = {
         package = pkgs.vimPlugins.tabby-nvim;
         setup = ''
@@ -45,6 +45,7 @@
   end,
           })
         '';
-    ];
+      };
+    };
   };
 }
