@@ -2,14 +2,14 @@
 {
   imports = [
     ./neowiki.nix
-    ./tabby.nix
+    ./tabby
   ];
 
   vim = {
-    statusline.lualine.enable = true;
+    #statusline.lualine.enable = true;
     telescope.enable = true;
     autocomplete.nvim-cmp.enable = true;
-  
+    notify.nvim-notify.enable = true;
 
     languages = {
       enableLSP = true;
