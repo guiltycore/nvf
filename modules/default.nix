@@ -2,6 +2,7 @@
 {
   imports = [
     ./neowiki.nix
+    ./tabby.nix
   ];
 
   vim = {
@@ -22,9 +23,6 @@
     viAlias = true;
     vimAlias = true;
     enableLuaLoader = true;
-    startPlugins = [
-      pkgs.vimPlugins.tabby-nvim
-    ];
     extraPackages = [
       pkgs.nixfmt
     ];
