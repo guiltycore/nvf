@@ -1,6 +1,7 @@
 {
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+
     nvf = {
       url ="github:notashelf/nvf";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -25,6 +26,7 @@
           pkgs = nixpkgs.legacyPackages.x86_64-linux;
 
           modules = [
+            nvf.nixosModules.default
             ./modules
           ];
 
