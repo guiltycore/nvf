@@ -4,6 +4,10 @@
     ./neowiki.nix
   ];
 
+  home.packages = with pkgs; [
+    vimPlugins.tabby-nvim
+  ];  
+
   vim = {
     viAlias = true;
     vimAlias = true;
