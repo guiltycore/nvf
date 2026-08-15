@@ -32,7 +32,7 @@
         (nvf.lib.neovimConfiguration {
           inherit pkgs;
           modules = [
-            ./modules
+            ./default.nix
           ];
 
           extraSpecialArgs = {
