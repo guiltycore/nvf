@@ -4,13 +4,17 @@
 
     options = {
       showtabline = 2;
-      tabline     = "%!v:lua.TabbyRenderTabline()";
-    }
+      signcolumn  = "yes";
+      cmdheight   = 0;
+    };
 
-    extraPlugins = {
-      tabby = {
+    lazy.plugins = {
+      "tabby.nvim" = {
         package = pkgs.vimPlugins.tabby-nvim;
-        setup = builtins.readFile ./setup.lua; 
+
+        event   = ["VimEnter"];
+
+        after   = builtins.readFile ./setup.lua;
       };
     };
   };

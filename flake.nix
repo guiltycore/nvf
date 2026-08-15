@@ -20,11 +20,17 @@
       neowiki,
       ...
     }:
+    let
+      system = "x86_64-linux";
+      pkgs = import nixpkgs {
+        inherit system;
+        config.allowUnfree = true;
+      };
+    in
     {
-      packages.x86_64-linux.default =
+      packages.${system}.default =
         (nvf.lib.neovimConfiguration {
-          pkgs = nixpkgs.legacyPackages.x86_64-linux;
-
+          inherit pkgs;
           modules = [
             ./modules
           ];

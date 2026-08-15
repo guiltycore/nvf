@@ -1,14 +1,10 @@
 { pkgs, ... }:
 {
+# NOTICE: Do not set indent width manually, use vim.bo.shiftwidth = xxx
   vim = {
-
-    options = {
-      showtabline = 2;
-    };
-
     lazy.plugins = {
-      "incline.nvim" = {
-        package = pkgs.vimPlugins.incline-nvim;
+      "hlchunk.nvim" = {
+        package = pkgs.vimPlugins.hlchunk-nvim;
         event = ["VimEnter"];
         after = builtins.readFile ./setup.lua;
       };
