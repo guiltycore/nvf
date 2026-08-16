@@ -4,6 +4,8 @@
     ./nix
     ./python
     ./typescript
+    ./golang
+    ./rust
   ];
 
   vim = {

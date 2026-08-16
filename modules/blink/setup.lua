@@ -96,6 +96,7 @@ require("blink.cmp").setup({
                 table.insert(highlights, {
                   idx,
                   idx + 1,
+                  --group = "BlinkCmpLabelMatch"
                   group = "BlinkCmpLabelMatchCustom",
                 })
               end

@@ -13,8 +13,11 @@
       };
       lsp = {
         enable  = true;
-        servers = [ "basedpyright" ];
+        servers = [ "basedpyright"
+                    "python-lsp-server"
+                    "ruff" ];
       };
     };
+
   };
 }
