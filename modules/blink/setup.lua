@@ -76,6 +76,12 @@ require("blink.cmp").setup({
             text = function(ctx)
               local highlights_info = require("colorful-menu").blink_highlights(ctx)
               
+              vim.schedule(function()
+                vim.notify(vim.inspect({
+                  label = ctx.label,
+                  result = highlights_info,
+                }))
+              end) 
               if highlights_info ~= nil then
                 return highlights_info.label
               end

@@ -7,12 +7,13 @@
     ./maximize
     ./lualine
     ./snacks
-    ./colorful-menu
+    #./colorful-menu
     ./toggleterm
     ./blink
     ./lazygit
     ./lsp
     ./treesitter
+    ./clipboard
   ];
 
   vim = {
