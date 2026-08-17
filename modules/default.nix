@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ ... }:
 {
   imports = [
     ./neowiki
@@ -7,13 +7,13 @@
     ./maximize
     ./lualine
     ./snacks
-    #./colorful-menu
     ./toggleterm
     ./blink
     ./lazygit
     ./lsp
     ./treesitter
     ./clipboard
+    ./noice
   ];
 
   vim = {
@@ -23,8 +23,11 @@
 
     theme = {
       enable = true;
-      name = "catppuccin";
-      style = "mocha";
+      #name = "catppuccin";
+      name = "github";
+      #style = "mocha";
+      style = "dark_dimmed";
+      #style = "dark";
       transparent = true;
     };
   };

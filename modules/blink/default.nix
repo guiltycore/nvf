@@ -46,12 +46,16 @@
         signature = {
           enabled = true;
           window.border = "rounded";
+          # If transperent menu is tomuch of a pain delete the line below
+          winhighlight = "Normal:NormalFloat,FloatBorder:BlinkCmpBorder";
         };
         completion = {
           documentation = {
             auto_show = true;
             auto_show_delay_ms = 200;
             window.border = "rounded";
+          # If transperent menu is tomuch of a pain delete the line below
+            winhighlight = "Normal:NormalFloat,FloatBorder:BlinkCmpBorder";
           };
           list.selection = {
             preselect = false;
@@ -59,8 +63,10 @@
           };
           menu = {
             border = "rounded";
-            winhighlight = "Normal:BlinkCmpMenu,FloatBorder:BlinkCmpBorder";
+            #winhighlight = "Normal:BlinkCmpMenu,FloatBorder:BlinkCmpBorder";
+            winhighlight = "Normal:NormalFloat,FloatBorder:BlinkCmpBorder";
             auto_show = true;
+          # If transperent menu is tomuch of a pain delete the line below
             #ghost_text.enabled = true;
             #            keyword.range = "full";
             draw = {
