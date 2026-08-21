@@ -20,7 +20,10 @@
     telescope.enable = true;
     notify.nvim-notify.enable = true;
     visuals.nvim-web-devicons.enable = true;
-
+    ui = {
+      nvim-highlight-colors.enable = true;
+      nvim-ufo.enable = true;
+    };
     theme = {
       enable = true;
       #name = "catppuccin";

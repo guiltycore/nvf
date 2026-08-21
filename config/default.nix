@@ -36,6 +36,7 @@
     #    underline = true;
     #  };
     #};
+    luaConfigRC.end4-theme = builtins.readFile ./theme/end4-theme.lua;
     luaConfigRC.core        = builtins.readFile ./core.lua;
     luaConfigRC.diagnostics = builtins.readFile ./diagnostics.lua;
     luaConfigPre            = builtins.readFile ./pre.lua;

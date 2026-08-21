@@ -70,14 +70,14 @@
 		-- end, { desc = "Terminal: Vertical split" })
 		--
 		-- -- Tab'da aç
-		-- map("n", "<leader>tt", function()
-		--     Terminal:new({ direction = "tab" }):toggle()
-		-- end, { desc = "Terminal: Tab" })
+		map("n", "<leader>tt", function()
+		    Terminal:new({ direction = "tab" }):toggle()
+		end, { desc = "Terminal: Tab" })
 		--
 		-- -- Float
-		-- map("n", "<leader>tf", function()
-		--     Terminal:new({ direction = "float" }):toggle()
-		-- end, { desc = "Terminal: Float" })
+		map("n", "<leader>tf", function()
+		    Terminal:new({ direction = "float" }):toggle()
+		end, { desc = "Terminal: Float" })
 		--
 		-- -- Açık terminaller arasında seç
 		map("n", "<leader>ti", "<cmd>TermSelect<cr>", { desc = "Terminal: Select" })
